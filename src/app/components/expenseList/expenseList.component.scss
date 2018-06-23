@@ -1,0 +1,41 @@
+.add-expense-header{
+    padding: 10px;
+    border-bottom: 1px solid #d5d6d9;
+    margin: 0;
+
+    div{
+        width: 100%;
+        text-align: right;
+    }
+
+    button{
+        cursor: pointer;
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+.expense-widgets-container{
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+
+    .expense-widget{
+        float: left;
+        width: 200px;
+        border: 1px solid #d5d6d9;
+        height: 150px;
+        margin: 0 20px 20px 0;
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #66ffcc;
+    }
+}
+
+.add-expense-msg{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 18px;
+}

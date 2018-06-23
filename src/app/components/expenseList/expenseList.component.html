@@ -1,0 +1,34 @@
+<div class="expenseList-container">
+    <div class="row add-expense-header">
+        <div>
+            <button class="btn btn-secondary" (click) = "addExpense()">ADD EXPENSE</button>
+        </div>
+        
+    </div>
+    <!-- <div *ngIf="expenseList.length > 0; then expenseWidget; else addExpenseMsg"></div>
+
+    <ng-template #expenseWidget>
+        <ul class="expense-widgets-container row">
+            <li *ngFor = "let expense of expenseList" class="expense-widget">
+                <expense-widget [expense] = "expense"></expense-widget>
+            </li>
+        </ul>
+    </ng-template> -->
+
+    <ng-template #addExpenseMsg>
+        <p class="add-expense-msg">There are no expenses to show. Please add expense</p>
+    </ng-template>
+
+    <modal-window *ngIf="showModalWindow" [showModalWindow]="showModalWindow" (closeModalWindow)="closeModalWindow()">
+        <div>hai</div>
+    </modal-window>
+
+    <dummy>
+        <header #viewChild1>header</header>
+        <ng-template let-name>
+            <counter [name]="name"></counter>
+        </ng-template>
+        <div footer>footer</div>
+    </dummy>
+    
+</div>

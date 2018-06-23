@@ -1,0 +1,30 @@
+.dashboard-container{
+    overflow-y: auto;
+    height: calc(100% - 50px);
+    margin-top: 50px;
+    
+    .header{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 50px;
+        margin: 0;
+        background-image: linear-gradient(to bottom, rgba(0, 207, 187, 0.98), #0E6560);
+
+        .title{
+            text-align: center;
+
+            h4{
+                font-size: 18px;
+                color: #ffffff;
+                padding-top: 12px;
+            }
+        }
+
+        .userName{
+            color: #ffffff;
+            padding-top: 12px;
+            text-align: right;
+        }
+    }
+}

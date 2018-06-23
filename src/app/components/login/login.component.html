@@ -1,0 +1,27 @@
+<div class="login-component">
+    <div class="login-body">
+        <form [formGroup]="loginForm">
+            <div class="form-group">
+                <input type="text"
+                    placeholder="Enter user name"
+                    [formControl]="loginForm.controls['username']"
+                />
+            </div>
+            
+            <div class="form-group">
+                <input type="password"
+                    placeholder="Enter password"
+                    [formControl]="loginForm.controls['password']"
+                />
+            </div>
+
+            <div class="form-actions clearfix">
+                <button class="btn login" type="submit" (click)="login(loginForm, 'login')" [disabled]="!loginForm.valid">LOGIN</button>
+                <button class="btn login" type="submit" (click)="login(loginForm, 'register')" [disabled]="!loginForm.valid">REGISTER</button>
+            </div>
+            
+        </form>
+
+        <loader *ngIf="showLoader"></loader>
+    </div>
+</div>
